@@ -224,6 +224,56 @@
 
 				});
 
+		// Details buttons. *** FIX ADDED HERE ***
+			$('.gallery').on('click', '.button', function(event) {
+
+				event.stopPropagation();
+				event.preventDefault();
+
+				var $btn     = $(this);
+				var $caption = $btn.closest('.caption');
+				var title    = $caption.find('h3').text();
+				var body     = $caption.find('p').text();
+
+				// Build modal once if it doesn't exist yet
+				if ($('#exp-modal').length === 0) {
+					$('body').append(
+						'<div id="exp-modal" style="' +
+							'display:none; position:fixed; top:0; left:0;' +
+							'width:100%; height:100%; z-index:999999;' +
+							'background:rgba(0,0,0,0.75);' +
+							'align-items:center; justify-content:center;">' +
+							'<div style="' +
+								'background:#fff; color:#111; padding:2.5em;' +
+								'max-width:480px; width:90%; border-radius:8px;' +
+								'position:relative; box-shadow:0 10px 40px rgba(0,0,0,0.4);">' +
+								'<h3 id="exp-title" style="margin-bottom:0.5em; font-size:1.2em;"></h3>' +
+								'<p id="exp-body" style="line-height:1.6;"></p>' +
+								'<button id="exp-close" style="' +
+									'margin-top:1.5em; padding:0.5em 1.5em;' +
+									'background:#000; color:#fff; border:none;' +
+									'border-radius:4px; cursor:pointer; font-size:0.9em;">' +
+									'Close' +
+								'</button>' +
+							'</div>' +
+						'</div>'
+					);
+
+					$('#exp-close').on('click', function() {
+						$('#exp-modal').css('display', 'none');
+					});
+
+					$('#exp-modal').on('click', function(e) {
+						if (e.target === this) $(this).css('display', 'none');
+					});
+				}
+
+				$('#exp-title').text(title);
+				$('#exp-body').text(body);
+				$('#exp-modal').css('display', 'flex');
+
+			});
+
 		// Lightbox.
 			$('.gallery.lightbox')
 				.on('click', 'a', function(event) {
