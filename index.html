@@ -16,22 +16,27 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+				<!-- Hero -->
+					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+						
 						<div class="content">
-							<h1>Alexa Kamm</h1>
-							<p class="major">Software Developer building scalable data pipelines within a cloud-native Enterprise Data Platform.<br>
-							Interested in web development, product design, and ethical tech. 
-
-							<!-- <br>Get to know me: <br> -->
-							<br><br><a href="#projects" class="button big wide smooth-scroll">Personal Projects</a><br><a href="#experience" class="button big wide smooth-scroll">Experience</a><br><a href="#recognition" class="button big wide smooth-scroll">Awards, Honors, and Certifications</a><br><a href="#skills" class="button big wide smooth-scroll">Skills</a> <br><a href="#hobbies" class="button big wide smooth-scroll">Hobbies</a> <br>
-							<a href="assets/resume.pdf" class="button big wide" target="_blank">
-							  Resume
-							</a><br>
-						</p>
+							<div class="name-gif">
+								<img src="images/name.gif" alt="Alexa Kamm" />
+							</div>
+							<p class="major">Software Developer building scalable data pipelines within a cloud-native Enterprise Data Platform.<br><br>
+							Interested in web development, product design, and ethical tech.</p>
+							<div class="nav-buttons">
+								<a href="#projects" class="button smooth-scroll">Projects</a>
+								<a href="#experience" class="button smooth-scroll">Experience</a>
+								<a href="#recognition" class="button smooth-scroll">Awards</a>
+								<a href="#skills" class="button smooth-scroll">Skills</a>
+								<a href="#hobbies" class="button smooth-scroll">Hobbies</a>
+								<a href="assets/resume.pdf" class="button" target="_blank">Resume</a>
+							</div>
 						</div>
+						
 						<div class="image">
-							<img src="images/me.jpg" alt="" />
+							<img src="images/me.jpg" alt="Alexa Kamm" />
 						</div>
 					</section>
 
@@ -42,110 +47,99 @@
 				    <p class="major">A selection of my creative projects.</p>
 
 				    <!-- Project 1 -->
-				    <div style="margin-bottom: 3em;">
+				    <div class="project-card">
+				      <p class="project-category"><i class="fas fa-gamepad"></i> Game Development</p>
 				      <h2>Dimensions</h2>
-
 				      <p>
-				        2D physics-based puzzle platformer inspired by Edwin Abbott's Novella <em>Flatland</em>.
+				        2D physics-based puzzle platformer inspired by Edwin Abbott's novella <em>Flatland</em>.
 				        Built core gameplay systems, movement mechanics, and level logic in GDScript.
 				      </p>
-
-						<p class="major">
-						  <span class="icon solid fa-gamepad"></span>
-						  Game Development
-						</p>
-						<p>
-						  Godot · GDScript · Physics-based design
-						</p>
-
-				      <ul class="actions">
-				        <li><a href="https://www.youtube.com/watch?v=kgED-BlMuQM&feature=youtu.be" target="_blank" class="button">View Demo</a></li>
-				      </ul>
-
-				      <a href="https://www.youtube.com/watch?v=kgED-BlMuQM&feature=youtu.be" target="_blank">
-				        <img src="images/dimensions.jpg" alt="Dimensions Game Screenshot"
-				          style="width:100%; max-width:600px; border-radius:12px;">
+				      <p class="tech-tags">Godot &middot; GDScript &middot; Physics-based design</p>
+				      <a href="#" class="video-thumb" data-video="kgED-BlMuQM">
+				        <img src="images/dimensions.jpg" alt="Dimensions Game Screenshot" />
+				        <span class="play-btn"><i class="fab fa-youtube"></i></span>
 				      </a>
 				    </div>
 
 				    <!-- Project 2 -->
-				    <div>
+				    <div class="project-card">
+				      <p class="project-category"><i class="fas fa-desktop"></i> Web Development</p>
 				      <h2>MLB Pitcher Analytics Web App</h2>
-
 				      <p>
 				        Interactive analytics platform for evaluating MLB pitcher performance with dynamic filtering and visualization.
 				      </p>
-
-				      <p class="major">
-						  <span class="icon solid fa-computer"></span>
-						  Web Development
-						</p>
-						<p>
-						  <span class="icon solid fa-terminal"></span> Ruby on Rails · <span class="icon solid fa-database"></span> SQL &nbsp;&nbsp · <span class="icon solid fa-chart-line"></span> Data Viz (Chartkick) · <span class="icon brands fa-docker"></span> Docker &nbsp;&nbsp; 
-						</p>
-
-
-				      <ul class="actions">
-				        <li><a href="https://www.youtube.com/watch?v=EUOopM4EDlY" target="_blank" class="button">View Demo</a></li>
-				      </ul>
-
-				      <a href="https://www.youtube.com/watch?v=EUOopM4EDlY" target="_blank">
-				        <img src="images/pitcher-selection.jpg" alt="MLB Pitcher App Screenshot"
-				          style="width:100%; max-width:600px; border-radius:12px;">
+				      <p class="tech-tags">Ruby on Rails &middot; SQL &middot; Chartkick &middot; Docker</p>
+				      <a href="#" class="video-thumb" data-video="EUOopM4EDlY">
+				        <img src="images/pitcher-selection.jpg" alt="MLB Pitcher App Screenshot" />
+				        <span class="play-btn"><i class="fab fa-youtube"></i></span>
 				      </a>
 				    </div>
 
 				  </div>
 				</section>
+
+				<!-- Video lightbox -->
+				<div id="video-lightbox" aria-hidden="true">
+				  <div id="video-lightbox-backdrop"></div>
+				  <div id="video-lightbox-content">
+				    <button id="video-lightbox-close" aria-label="Close">&times;</button>
+				    <div id="video-lightbox-frame"></div>
+				  </div>
+				</div>
 				<!-- Five -->
 					<section id="experience" class="wrapper style1 align-center">
 						<div class="inner">
 							<h1>Experience</h1>
-							<p></p>
 						</div>
 
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/freddie.jpg" class="image">
-										<img src="images/gallery/thumbs/freddie.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Freddie Mac</h3>
-										<p>Software Developer, Freddie Data Platform.</p>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/uva-health.jpg" class="image">
-										<img src="images/gallery/thumbs/uva-health.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>UVA Health Systems</h3>
-										<p>Clinical Research Intern, Maternal Fetal Medicine</p>
+						<div class="experience-cards">
 
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/cd.jpg" class="image">
-										<img src="images/gallery/thumbs/cd.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>The Cavalier Daily</h3>
-										<p>Staff Writer, News and Life Sections</p>
-
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/ram.jpg" class="image">
-										<img src="images/gallery/thumbs/ram.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Remote Area Medical, UVA</h3>
-										<p>Special Events Coordinator, Finance Team</p>
-
-									</div>
-								</article>
+							<div class="exp-card">
+								<div class="exp-img">
+									<img src="images/gallery/thumbs/freddie.jpg" alt="Freddie Mac" />
+								</div>
+								<div class="exp-body">
+									<span class="exp-role">Software Developer</span>
+									<h3>Freddie Mac</h3>
+									<p>Building scalable data pipelines within the Freddie Data Platform using Scala, Apache Spark, and AWS in an event-driven architecture.</p>
+								</div>
 							</div>
+
+							<div class="exp-card">
+								<div class="exp-img">
+									<img src="images/gallery/thumbs/uva-health.jpg" alt="UVA Health" />
+								</div>
+								<div class="exp-body">
+									<span class="exp-role">Clinical Research Intern</span>
+									<h3>UVA Health Systems</h3>
+									<p>Supported research in the Maternal Fetal Medicine department, assisting with data collection and clinical study coordination.</p>
+								</div>
+							</div>
+
+							<div class="exp-card">
+								<div class="exp-img">
+									<img src="images/gallery/thumbs/cd.jpg" alt="The Cavalier Daily" />
+								</div>
+								<div class="exp-body">
+									<span class="exp-role">Staff Writer</span>
+									<h3>The Cavalier Daily</h3>
+									<p>Wrote and edited articles for the News and Life sections of UVA's independent student newspaper.</p>
+								</div>
+							</div>
+
+							<div class="exp-card">
+								<div class="exp-img">
+									<img src="images/gallery/thumbs/ram.jpg" alt="Remote Area Medical" />
+								</div>
+								<div class="exp-body">
+									<span class="exp-role">Special Events Coordinator</span>
+									<h3>Remote Area Medical, UVA</h3>
+									<p>Coordinated fundraising events and managed logistics for the Finance Team supporting free medical clinics.</p>
+								</div>
+							</div>
+
+						</div>
+					</section>
 
 				<section id="recognition" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
@@ -170,11 +164,10 @@
 						
 						</ul>
 						</div>
-					</section>
+				</section>
 
-					</section>
 				<!-- Two -->
-					<section id="skills"class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section id="skills" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 						<h1>Skills</h1>
 
@@ -193,37 +186,31 @@
 					<section id="hobbies" class="wrapper style1 align-center">
 						<div class="inner">
 							<h1>Hobbies</h1>
-							<p></p>
-							<div class="items style1 medium onscroll-fade-in">
+							
+							<div class="items style1 medium onscroll-fade-in" id="hobbies-row">
 								<section>
 									<span class="icon style2 major fa-solid fa-table-tennis-paddle-ball"></span>
 									<h3>Tennis</h3>
-									<p></p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-running"></span>
 									<h3>Running</h3>
-									<p></p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-book-open"></span>
 									<h3>Reading</h3>
-									<p></p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-mountain"></span>
 									<h3>Camping & Hiking</h3>
-									<p></p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-recycle"></span>
 									<h3>Thrifting</h3>
-									<p></p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-camera"></span>
 									<h3>Photography</h3>
-									<p></p>
 								</section>
 							</div>
 						</div>
@@ -255,6 +242,40 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Video lightbox
+				(function() {
+					var lightbox = document.getElementById('video-lightbox');
+					var frame    = document.getElementById('video-lightbox-frame');
+					var backdrop = document.getElementById('video-lightbox-backdrop');
+					var closeBtn = document.getElementById('video-lightbox-close');
+
+					function openVideo(videoId) {
+						frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1&rel=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+						lightbox.classList.add('is-open');
+						document.body.style.overflow = 'hidden';
+					}
+
+					function closeVideo() {
+						lightbox.classList.remove('is-open');
+						frame.innerHTML = '';
+						document.body.style.overflow = '';
+					}
+
+					document.querySelectorAll('.video-thumb[data-video]').forEach(function(el) {
+						el.addEventListener('click', function(e) {
+							e.preventDefault();
+							openVideo(this.dataset.video);
+						});
+					});
+
+					closeBtn.addEventListener('click', closeVideo);
+					backdrop.addEventListener('click', closeVideo);
+					document.addEventListener('keydown', function(e) {
+						if (e.key === 'Escape') closeVideo();
+					});
+				})();
+			</script>
 
 	</body>
 </html>

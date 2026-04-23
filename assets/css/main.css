@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
 
 /*
 	Story by HTML5 UP
@@ -28,6 +29,7 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
 
 body {
 	line-height: 1;
@@ -157,7 +159,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Source Sans Pro", sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1.65;
@@ -3487,7 +3489,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			border-radius: 0;
-			width: 50%;
+			width:50%;
 		}
 
 			.banner.style1 .image img {
@@ -3507,6 +3509,7 @@ input, select, textarea {
 				height: 100%;
 				border-radius: 0;
 			}
+
 
 		@media screen and (max-width: 1680px) {
 
@@ -8601,3 +8604,500 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+			
+
+
+
+
+/* =====================================================
+   Brettland-inspired enhancements
+   ===================================================== */
+
+/* Color tokens */
+:root {
+	--bl-dark:       #161616;
+	--bl-blue:       #2a66ad;
+	--bl-blue-light: #528ed9;
+	--bl-cornsilk:   #fef0cc;
+	--bl-ivory:      #fffcec;
+	--bl-muted:      #a4a4a4;
+}
+
+/* ---- Global background & text ---- */
+html, body {
+	background-color: var(--bl-cornsilk) !important;
+	color: var(--bl-dark);
+}
+
+#wrapper {
+	background-color: var(--bl-cornsilk);
+}
+
+/* Force consistent bg on all top-level sections */
+#wrapper > section,
+#wrapper > footer,
+.banner,
+.spotlight,
+.wrapper.style1,
+.wrapper.style2 {
+	background-color: var(--bl-cornsilk) !important;
+	color: var(--bl-dark);
+}
+
+/* Remove section dividers */
+#wrapper.divided > *:not(:first-child) {
+	box-shadow: none !important;
+	border-top: 1px solid rgba(22, 22, 22, 0.08) !important;
+}
+
+/* ---- Typography — unified font stack ---- */
+body, input, select, textarea {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+	color: var(--bl-dark);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+}
+
+/* ---- Name GIF inside hero ---- */
+.name-gif {
+	margin-bottom: 1.5rem;
+}
+
+.name-gif img {
+	height: 90px;
+	width: auto;
+	max-width: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+/* ---- Hero nav buttons ---- */
+.nav-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	margin-top: 1.5rem;
+}
+
+.nav-buttons .button {
+	margin: 0 !important;
+}
+
+/* ---- Hero photo ---- */
+.banner .image img {
+	object-position: center top !important;
+}
+
+/* ---- Name heading: funky, round, big ---- */
+#wrapper .banner .content h1 {
+	font-family: "Nunito", "Source Sans Pro", sans-serif;
+	font-weight: 900;
+	font-size: 5.5rem;
+	line-height: 1.05;
+	letter-spacing: -0.02em;
+	color: var(--bl-dark);
+}
+
+/* Section h1s */
+.spotlight .content h1,
+.wrapper.style1 .inner h1 {
+	font-family: "Nunito", "Source Sans Pro", sans-serif;
+	font-weight: 900;
+	font-size: 2.75rem;
+	letter-spacing: -0.02em;
+	color: var(--bl-dark);
+}
+
+/* All other headings in sections */
+.banner .content h2,
+.banner .content h3,
+.spotlight .content h2,
+.spotlight .content h3,
+.wrapper.style1 h2,
+.wrapper.style1 h3 {
+	color: var(--bl-dark);
+}
+
+/* ---- Body text in sections ---- */
+.banner .content p,
+.spotlight .content p,
+.wrapper.style1 p,
+.wrapper.style1 .inner p {
+	color: var(--bl-dark);
+	opacity: 0.9;
+}
+
+@media screen and (max-width: 736px) {
+	.name-gif img {
+		height: 64px;
+	}
+	.nav-buttons {
+		gap: 0.5rem;
+	}
+}
+
+/* ---- Links ---- */
+a {
+	color: var(--bl-blue-light);
+	text-decoration: none;
+	transition: opacity 0.2s ease;
+}
+
+a:hover {
+	opacity: 0.6;
+	color: var(--bl-blue-light);
+	text-decoration: none;
+}
+
+/* ---- Buttons ---- */
+.button {
+	background-color: transparent !important;
+	border: 1px solid var(--bl-blue) !important;
+	color: var(--bl-blue-light) !important;
+	border-radius: 100px !important;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease !important;
+	display: inline-block;
+	box-shadow: none !important;
+}
+
+.button:hover {
+	background-color: var(--bl-blue) !important;
+	color: var(--bl-dark) !important;
+	opacity: 1;
+}
+
+/* ---- Gallery captions ---- */
+.gallery article .caption {
+	background-color: var(--bl-cornsilk);
+}
+
+.gallery article .caption h3,
+.gallery article .caption p {
+	color: var(--bl-dark);
+}
+
+/* ---- Hobbies icons ---- */
+.items .icon,
+.items .icon.style2,
+.items span.icon {
+	color: var(--bl-dark);
+}
+
+.items .icon.style2:before {
+	box-shadow: inset 0 0 0 1px rgba(254, 240, 204, 0.4);
+	color: var(--bl-dark);
+}
+
+.items section h3 {
+	color: var(--bl-dark);
+}
+
+/* ---- Hobbies row layout ---- */
+#hobbies-row,
+#hobbies-row > *,
+#hobbies-row.items.style1 > *,
+#hobbies-row.items.style1.medium > * {
+	border-color: rgba(22, 22, 22, 0.1) !important;
+}
+
+
+/* ---- Footer ---- */
+footer.wrapper {
+	background-color: var(--bl-cornsilk) !important;
+	border-top: 1px solid rgba(254, 240, 204, 0.12);
+}
+
+footer.wrapper h2 {
+	color: var(--bl-dark);
+}
+
+footer.wrapper p {
+	color: var(--bl-muted);
+}
+
+footer.wrapper .icons a {
+	color: var(--bl-blue-light);
+	border-color: rgba(82, 142, 217, 0.4);
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+footer.wrapper .icons a:hover {
+	background-color: var(--bl-blue);
+	color: var(--bl-dark) !important;
+	border-color: var(--bl-blue);
+	opacity: 1;
+}
+
+/* ---- Blockquote ---- */
+blockquote {
+	border-left: 3px solid var(--bl-blue);
+	color: var(--bl-dark);
+	background: rgba(42, 102, 173, 0.08);
+}
+
+/* ---- HR ---- */
+hr {
+	border-bottom-color: rgba(254, 240, 204, 0.15);
+}
+
+/* ---- Code ---- */
+code {
+	background: rgba(42, 102, 173, 0.15);
+	border-color: rgba(42, 102, 173, 0.3);
+	color: var(--bl-dark);
+}
+
+/* ---- Strong ---- */
+strong, b {
+	color: var(--bl-dark);
+	font-weight: 600;
+}
+
+/* ---- Recognition list ---- */
+#recognition ul li {
+	margin-bottom: 1.2em;
+	line-height: 1.6;
+	color: var(--bl-dark);
+}
+
+/* ---- Responsive ---- */
+@media screen and (max-width: 736px) {
+	#wrapper .banner .content h1 { font-size: 3.25rem; }
+}
+
+/* ---- Project cards ---- */
+.project-card {
+	margin-bottom: 3rem;
+}
+
+.project-card h2 {
+	margin-bottom: 0.5rem;
+}
+
+.project-category {
+	font-size: 0.8rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--bl-blue-light);
+	margin-bottom: 0.4rem;
+	opacity: 0.85;
+}
+
+.project-category i {
+	margin-right: 0.4em;
+	font-size: 0.9rem;
+}
+
+.tech-tags {
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+	color: var(--bl-dark);
+	margin-bottom: 1rem;
+	opacity: 0.6;
+}
+
+.video-thumb {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 560px;
+	border-radius: 10px;
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.video-thumb img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: filter 0.25s ease;
+}
+
+.video-thumb .play-btn {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(22, 22, 22, 0.35);
+	transition: background 0.25s ease;
+}
+
+.video-thumb .play-btn i {
+	font-size: 3.5rem;
+	color: #fff;
+	opacity: 0.9;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+	filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+
+.video-thumb:hover img {
+	filter: brightness(0.85);
+}
+
+.video-thumb:hover .play-btn {
+	background: rgba(22, 22, 22, 0.5);
+}
+
+.video-thumb:hover .play-btn i {
+	transform: scale(1.12);
+	opacity: 1;
+}
+
+/* ---- Video lightbox ---- */
+#video-lightbox {
+	display: none;
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	align-items: center;
+	justify-content: center;
+}
+
+#video-lightbox.is-open {
+	display: flex;
+}
+
+#video-lightbox-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(22, 22, 22, 0.85);
+	backdrop-filter: blur(4px);
+}
+
+#video-lightbox-content {
+	position: relative;
+	z-index: 1;
+	width: 90vw;
+	max-width: 900px;
+}
+
+#video-lightbox-frame iframe {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: 10px;
+	border: none;
+}
+
+#video-lightbox-close {
+	position: absolute;
+	top: -2.5rem;
+	right: 0;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+	line-height: 1;
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity 0.2s ease;
+	padding: 0;
+}
+
+#video-lightbox-close:hover {
+	opacity: 1;
+}
+
+/* ---- Experience cards ---- */
+.experience-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	max-width: 860px;
+	margin: 2rem auto 4rem;
+	padding: 0 2rem;
+}
+
+.exp-card {
+	display: flex;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(254, 240, 204, 0.12);
+	border-radius: 12px;
+	overflow: hidden;
+	transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.exp-card:hover {
+	border-color: rgba(82, 142, 217, 0.5);
+	transform: translateY(-4px);
+}
+
+.exp-img {
+	width: 100%;
+	height: 160px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.06);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.exp-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+	padding: 1rem;
+	filter: saturate(60%);
+	transition: filter 0.2s ease;
+}
+
+.exp-card:hover .exp-img img {
+	filter: saturate(100%);
+}
+
+.exp-body {
+	padding: 1.25rem 1.5rem 1.5rem;
+	flex: 1;
+}
+
+.exp-role {
+	display: inline-block;
+	font-size: 0.7rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--bl-blue-light);
+	margin-bottom: 0.4rem;
+}
+
+.exp-body h3 {
+	color: var(--bl-dark);
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin: 0 0 0.6rem;
+	letter-spacing: -0.01em;
+}
+
+.exp-body p {
+	color: var(--bl-dark);
+	opacity: 0.75;
+	font-size: 0.9rem;
+	line-height: 1.6;
+	margin: 0;
+}
+
+@media screen and (max-width: 736px) {
+	.experience-cards {
+		grid-template-columns: 1fr;
+		padding: 0 1rem;
+	}
+}
+
+/* ---- Name gif (legacy, now handled by .name-gif) ---- */
