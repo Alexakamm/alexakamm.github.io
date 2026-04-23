@@ -1,299 +1,314 @@
 <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Alexa Kamm</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body>
 
-<html>
-	<head>
-		<title>Alexa Kamm</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- NAV -->
+  <nav id="site-nav">
+    <span class="nav-logo">Alexa Kamm</span>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#recognition">Accolades</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="assets/resume.pdf" target="_blank">Résumé ↗</a></li>
+    </ul>
+  </nav>
 
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div>
+        <p class="hero-eyebrow">Software Developer</p>
+        <h1 class="hero-name">Alexa<br><em>Kamm.</em></h1>
+        <p class="hero-tagline">
+          Building scalable data pipelines within a cloud-native Enterprise Data Platform.
+          Interested in web development, product design, and ethical tech.
+        </p>
+        <div class="hero-pills">
+          <a href="#projects" class="primary">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#recognition">Accolades</a>
+          <a href="#skills">Skills</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="assets/resume.pdf" target="_blank">Résumé ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="images/me.jpg" alt="Alexa Kamm" />
+    </div>
+  </section>
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <!-- PROJECTS -->
+  <section id="projects" class="ak-section">
+    <div class="section-header fade-up">
+      <span class="section-label">Selected work</span>
+      <h2 class="section-title">Personal <em>Projects</em></h2>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <div class="projects-list">
 
-				<!-- Hero -->
-					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
-						
-						<div class="content">
-							<div class="name-gif">
-								<img src="images/name.gif" alt="Alexa Kamm" />
-							</div>
-							<p class="major">Software Developer building scalable data pipelines within a cloud-native Enterprise Data Platform.<br><br>
-							Interested in web development, product design, and ethical tech.</p>
-							<div class="nav-buttons">
-								<a href="#projects" class="button smooth-scroll">Projects</a>
-								<a href="#experience" class="button smooth-scroll">Experience</a>
-								<a href="#recognition" class="button smooth-scroll">Accolades</a>
-								<a href="#skills" class="button smooth-scroll">Skills</a>
-								<a href="#hobbies" class="button smooth-scroll">Hobbies</a>
-								<a href="assets/resume.pdf" class="button" target="_blank">Resume</a>
-							</div>
-						</div>
-						
-						<div class="image">
-							<img src="images/me.jpg" alt="Alexa Kamm" />
-						</div>
-					</section>
+      <div class="project-row video-thumb" data-video="kgED-BlMuQM">
+        <div class="proj-thumb">
+          <img src="images/dimensions.jpg" alt="Dimensions Game Screenshot" />
+          <div class="proj-play">
+            <div class="proj-play-btn"><i class="fab fa-youtube"></i></div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <p class="proj-cat">Game Development</p>
+          <h3>Dimensions</h3>
+          <p>2D physics-based puzzle platformer inspired by Edwin Abbott's novella <em>Flatland</em>. Built core gameplay systems, movement mechanics, and level logic in GDScript.</p>
+          <div class="tech-tags-row">
+            <span class="tech-tag">Godot</span>
+            <span class="tech-tag">GDScript</span>
+            <span class="tech-tag">Physics-based design</span>
+          </div>
+        </div>
+      </div>
 
-				<!-- Three -->
-				<section id="projects" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-				  <div class="content">
-				    <h1>Personal Projects</h1>
-				    <p class="major">A selection of my creative projects.</p>
+      <div class="project-row video-thumb" data-video="EUOopM4EDlY">
+        <div class="proj-thumb">
+          <img src="images/pitcher-selection.jpg" alt="MLB Pitcher App Screenshot" />
+          <div class="proj-play">
+            <div class="proj-play-btn"><i class="fab fa-youtube"></i></div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <p class="proj-cat">Web Development</p>
+          <h3>MLB Pitcher Analytics</h3>
+          <p>Interactive analytics platform for evaluating MLB pitcher performance with dynamic filtering and visualization.</p>
+          <div class="tech-tags-row">
+            <span class="tech-tag">Ruby on Rails</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Chartkick</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+        </div>
+      </div>
 
-				    <!-- Project 1 -->
-				    <div class="project-card">
-				      <p class="project-category"><i class="fas fa-gamepad"></i> Game Development</p>
-				      <h2>Dimensions</h2>
-				      <p>
-				        2D physics-based puzzle platformer inspired by Edwin Abbott's novella <em>Flatland</em>.
-				        Built core gameplay systems, movement mechanics, and level logic in GDScript.
-				      </p>
-				      <p class="tech-tags">Godot &middot; GDScript &middot; Physics-based design</p>
-				      <a href="#" class="video-thumb" data-video="kgED-BlMuQM">
-				        <img src="images/dimensions.jpg" alt="Dimensions Game Screenshot" />
-				        <span class="play-btn"><i class="fab fa-youtube"></i></span>
-				      </a>
-				    </div>
+    </div>
+  </section>
 
-				    <!-- Project 2 -->
-				    <div class="project-card">
-				      <p class="project-category"><i class="fas fa-desktop"></i> Web Development</p>
-				      <h2>MLB Pitcher Analytics Web App</h2>
-				      <p>
-				        Interactive analytics platform for evaluating MLB pitcher performance with dynamic filtering and visualization.
-				      </p>
-				      <p class="tech-tags">Ruby on Rails &middot; SQL &middot; Chartkick &middot; Docker</p>
-				      <a href="#" class="video-thumb" data-video="EUOopM4EDlY">
-				        <img src="images/pitcher-selection.jpg" alt="MLB Pitcher App Screenshot" />
-				        <span class="play-btn"><i class="fab fa-youtube"></i></span>
-				      </a>
-				    </div>
+  <!-- EXPERIENCE -->
+  <div class="ak-band" id="experience">
+    <div class="ak-section">
+      <div class="section-header fade-up">
+        <span class="section-label">Where I've worked</span>
+        <h2 class="section-title"><em>Experience</em></h2>
+      </div>
 
-				  </div>
-				</section>
+      <div class="exp-grid">
 
-				<!-- Video lightbox -->
-				<div id="video-lightbox" aria-hidden="true">
-				  <div id="video-lightbox-backdrop"></div>
-				  <div id="video-lightbox-content">
-				    <button id="video-lightbox-close" aria-label="Close">&times;</button>
-				    <div id="video-lightbox-frame"></div>
-				  </div>
-				</div>
-				<!-- Five -->
-					<section id="experience" class="wrapper style1 align-center">
-						<div class="inner">
-							<h1>Experience</h1>
-						</div>
+        <div class="exp-card fade-up">
+          <div class="exp-img"><img src="images/gallery/thumbs/freddie.jpg" alt="Freddie Mac" /></div>
+          <span class="exp-role">Software Developer</span>
+          <h3>Freddie Mac</h3>
+          <p>Building scalable data pipelines within the Freddie Data Platform using Scala, Apache Spark, and AWS in an event-driven architecture.</p>
+        </div>
 
-						<div class="experience-cards">
+        <div class="exp-card fade-up">
+          <div class="exp-img"><img src="images/gallery/thumbs/uva-health.jpg" alt="UVA Health" /></div>
+          <span class="exp-role">Clinical Research Intern</span>
+          <h3>UVA Health System</h3>
+          <p>Supported research in the Maternal Fetal Medicine department, assisting with data collection and clinical study coordination.</p>
+        </div>
 
-							<div class="exp-card">
-								<div class="exp-img">
-									<img src="images/gallery/thumbs/freddie.jpg" alt="Freddie Mac" />
-								</div>
-								<div class="exp-body">
-									<span class="exp-role">Software Developer</span>
-									<h3>Freddie Mac</h3>
-									<p>Building scalable data pipelines within the Freddie Data Platform using Scala, Apache Spark, and AWS in an event-driven architecture.</p>
-								</div>
-							</div>
+        <div class="exp-card fade-up">
+          <div class="exp-img"><img src="images/gallery/thumbs/cd.jpg" alt="The Cavalier Daily" /></div>
+          <span class="exp-role">Staff Writer</span>
+          <h3>The Cavalier Daily</h3>
+          <p>Wrote and edited articles for the News and Life sections of UVA's independent student newspaper.</p>
+        </div>
 
-							<div class="exp-card">
-								<div class="exp-img">
-									<img src="images/gallery/thumbs/uva-health.jpg" alt="UVA Health" />
-								</div>
-								<div class="exp-body">
-									<span class="exp-role">Clinical Research Intern</span>
-									<h3>UVA Health System</h3>
-									<p>Supported research in the Maternal Fetal Medicine department, assisting with data collection and clinical study coordination.</p>
-								</div>
-							</div>
+        <div class="exp-card fade-up">
+          <div class="exp-img"><img src="images/gallery/thumbs/ram.jpg" alt="Remote Area Medical" /></div>
+          <span class="exp-role">Events Coordinator</span>
+          <h3>Remote Area Medical, UVA</h3>
+          <p>Coordinated fundraising events and managed logistics for the Finance Team supporting free medical clinics.</p>
+        </div>
 
-							<div class="exp-card">
-								<div class="exp-img">
-									<img src="images/gallery/thumbs/cd.jpg" alt="The Cavalier Daily" />
-								</div>
-								<div class="exp-body">
-									<span class="exp-role">Staff Writer</span>
-									<h3>The Cavalier Daily</h3>
-									<p>Wrote and edited articles for the News and Life sections of UVA's independent student newspaper.</p>
-								</div>
-							</div>
+      </div>
+    </div>
+  </div>
 
-							<div class="exp-card">
-								<div class="exp-img">
-									<img src="images/gallery/thumbs/ram.jpg" alt="Remote Area Medical" />
-								</div>
-								<div class="exp-body">
-									<span class="exp-role">Special Events Coordinator</span>
-									<h3>Remote Area Medical, UVA</h3>
-									<p>Coordinated fundraising events and managed logistics for the Finance Team supporting free medical clinics.</p>
-								</div>
-							</div>
+  <!-- AWARDS -->
+  <section id="recognition" class="ak-section">
+    <div class="section-header fade-up">
+      <span class="section-label">Recognition</span>
+      <h2 class="section-title">Awards &amp; <em>Honors</em></h2>
+    </div>
 
-						</div>
-					</section>
+    <div class="awards-list">
+      <div class="award-row fade-up">
+        <span class="award-num">01</span>
+        <div>
+          <strong>AWS Certified Cloud Practitioner (CLF-C02)</strong>
+          <span>Amazon Web Services</span>
+        </div>
+      </div>
+      <div class="award-row fade-up">
+        <span class="award-num">02</span>
+        <div>
+          <strong>Phi Beta Kappa, UVA</strong>
+          <span>Selected from top 10% of graduating class.</span>
+        </div>
+      </div>
+      <div class="award-row fade-up">
+        <span class="award-num">03</span>
+        <div>
+          <strong>Michael Wagenheim Memorial Scholarship</strong>
+          <span>Awarded to outstanding Rising Fourth Year English Major. Nominated by faculty in the UVA English department.</span>
+        </div>
+      </div>
+      <div class="award-row fade-up">
+        <span class="award-num">04</span>
+        <div>
+          <strong>William and Charlotte Savage Scholarship</strong>
+          <span>Awarded to outstanding Rising Fourth Year English Major. Nominated by faculty in the UVA English department.</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-				<section id="recognition" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-						<h1>Awards, Honors, and Certifications</h1>
-						<ul>
-							<li>
-						    <strong>AWS Certified Cloud Practitioner (CLF-C02)</strong><br>
-						    <span></span>
-						  </li>
-						  <li>
-						    <strong>Phi Beta Kappa, UVA</strong><br>
-						    <span>Selected from top 10% of graduating class.</span>
-						  </li>
-						  <li>
-						    <strong>Michael Wagenheim Memorial Scholarship</strong><br>
-						    <span>Awarded to outstanding Rising Fourth Year English Major. Nominated by faculty in the UVA English department.</span>
-						  </li>
-						  <li>
-						    <strong>William and Charlotte Savage Scholarship</strong><br>
-						    <span>Awarded to outstanding Rising Fourth Year English Major. Nominated by faculty in the UVA English department.</span>
-						  </li>
-						
-						</ul>
-						</div>
-				</section>
+  <!-- SKILLS -->
+  <div class="ak-band" id="skills">
+    <div class="ak-section">
+      <div class="section-header fade-up">
+        <span class="section-label">What I know</span>
+        <h2 class="section-title"><em>Skills</em></h2>
+      </div>
 
-				<!-- Two -->
-					<section id="skills" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-						<h1>Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-cell fade-up">
+          <h4>Languages</h4>
+          <p>Scala, Python, Java, SQL, Bash Scripting</p>
+        </div>
+        <div class="skill-cell fade-up">
+          <h4>Data &amp; Cloud</h4>
+          <p>Apache Spark, Amazon Web Services</p>
+        </div>
+        <div class="skill-cell fade-up">
+          <h4>Tools</h4>
+          <p>Git, Jenkins, Maven, Gradle, Linux, Docker</p>
+        </div>
+        <div class="skill-cell fade-up">
+          <h4>Practices</h4>
+          <p>Event Driven Architecture, Data Pipelines, CI/CD, Agile Development</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- HOBBIES -->
+  <section id="hobbies" class="ak-section">
+    <div class="section-header fade-up">
+      <span class="section-label">Outside the terminal</span>
+      <h2 class="section-title"><em>Hobbies</em></h2>
+    </div>
 
-						<p><strong>Languages:</strong> Scala, Python, Java, SQL, Bash Scripting</p>
+    <div class="hobbies-row">
+      <div class="hobby-cell fade-up">
+        <i class="h-icon fa-solid fa-table-tennis-paddle-ball"></i>
+        <span>Tennis</span>
+      </div>
+      <div class="hobby-cell fade-up">
+        <i class="h-icon fa-solid fa-person-running"></i>
+        <span>Running</span>
+      </div>
+      <div class="hobby-cell fade-up">
+        <i class="h-icon fa-solid fa-book-open"></i>
+        <span>Reading</span>
+      </div>
+      <div class="hobby-cell fade-up">
+        <i class="h-icon fa-solid fa-mountain"></i>
+        <span>Camping &amp; Hiking</span>
+      </div>
+      <div class="hobby-cell fade-up">
+        <i class="h-icon fa-solid fa-shirt"></i>
+        <span>Thrifting</span>
+      </div>
+      <div class="hobby-cell fade-up">
+        <i class="h-icon fa-solid fa-camera"></i>
+        <span>Photography</span>
+      </div>
+    </div>
+  </section>
 
-						<p><strong>Data & Cloud:</strong> Apache Spark, Amazon Web Services</p>
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <p class="footer-headline">
+      Let's make<br>something <em>great.</em>
+    </p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/alexa-kamm-2732081b2/" target="_blank">LinkedIn ↗</a>
+      <a href="mailto:alexakamm19@gmail.com">alexakamm19@gmail.com</a>
+      <a href="assets/resume.pdf" target="_blank">Résumé ↗</a>
+    </div>
+    <p class="footer-copy">© 2025 Alexa Kamm</p>
+  </footer>
 
-						<p><strong>Tools:</strong> Git, Jenkins, Maven, Gradle, Linux, Docker</p>
+  <!-- VIDEO LIGHTBOX -->
+  <div id="video-lightbox" aria-hidden="true">
+    <div id="video-lightbox-backdrop"></div>
+    <div id="video-lightbox-content">
+      <button id="video-lightbox-close" aria-label="Close">[ close ]</button>
+      <div id="video-lightbox-frame"></div>
+    </div>
+  </div>
 
-						<p><strong>Practices:</strong> Event Driven Architecture, Data Pipelines, CI/CD, Agile Development</p>
-							
-						</div>
-					</section>
-				<!-- Six -->
-					<section id="hobbies" class="wrapper style1 align-center">
-						<div class="inner">
-							<h1>Hobbies</h1>
-							
-							<div class="items style1 medium onscroll-fade-in" id="hobbies-row">
-								<section>
-									<span class="icon style2 major fa-solid fa-table-tennis-paddle-ball"></span>
-									<h3>Tennis</h3>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-running"></span>
-									<h3>Running</h3>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-book-open"></span>
-									<h3>Reading</h3>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-mountain"></span>
-									<h3>Camping & Hiking</h3>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-recycle"></span>
-									<h3>Thrifting</h3>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-camera"></span>
-									<h3>Photography</h3>
-								</section>
-							</div>
-						</div>
-					</section>
+  <script>
+    // Video lightbox
+    (function() {
+      var lightbox = document.getElementById('video-lightbox');
+      var frame    = document.getElementById('video-lightbox-frame');
+      var backdrop = document.getElementById('video-lightbox-backdrop');
+      var closeBtn = document.getElementById('video-lightbox-close');
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						
-						<div class="inner">
-							<h2>Get in Touch</h2>
-							<p>
-							Feel free to reach out for opportunities or collaboration.
-							</p>
-							<ul class="icon style1">
-							  <a href="https://www.linkedin.com/in/alexa-kamm-2732081b2/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							  <a href="mailto:alexakamm19@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a>
-							</ul>
-							<!-- <p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-						</div>
-					</footer>
+      function openVideo(id) {
+        frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
 
-			</div>
+      function closeVideo() {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        frame.innerHTML = '';
+        document.body.style.overflow = '';
+      }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				// Video lightbox
-				(function() {
-					var lightbox = document.getElementById('video-lightbox');
-					var frame    = document.getElementById('video-lightbox-frame');
-					var backdrop = document.getElementById('video-lightbox-backdrop');
-					var closeBtn = document.getElementById('video-lightbox-close');
+      document.querySelectorAll('.video-thumb[data-video]').forEach(function(el) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          openVideo(this.dataset.video);
+        });
+      });
 
-					function openVideo(videoId) {
-						frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1&rel=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
-						lightbox.classList.add('is-open');
-						document.body.style.overflow = 'hidden';
-					}
+      closeBtn.addEventListener('click', closeVideo);
+      backdrop.addEventListener('click', closeVideo);
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeVideo(); });
+    })();
 
-					function closeVideo() {
-						lightbox.classList.remove('is-open');
-						frame.innerHTML = '';
-						document.body.style.overflow = '';
-					}
+    // Scroll fade-in
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+    })();
+  </script>
 
-					document.querySelectorAll('.video-thumb[data-video]').forEach(function(el) {
-						el.addEventListener('click', function(e) {
-							e.preventDefault();
-							openVideo(this.dataset.video);
-						});
-					});
-
-					closeBtn.addEventListener('click', closeVideo);
-					backdrop.addEventListener('click', closeVideo);
-					document.addEventListener('keydown', function(e) {
-						if (e.key === 'Escape') closeVideo();
-					});
-				})();
-			</script>
-
-	</body>
+</body>
 </html>
-
-				<!-- Four -->
-<!-- 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Relevant Coursework</h2>
-							<p>
-								Software Development Essentials<br>Data Structures & Algorithms I & II (OOP)<br>Computer Systems & Organization I & II (Architecture & OS)<br>Cybersecurity<br>Database Systems <br> Python <br> Discrete Math & Theory I & II <br> Calculus<br> Biostatistics (R)<br> Chemistry I & II <br> Biomechanics<br> Technosonics
-
-							</p>
-							<ul class="actions stacked">
-								<li><a href=#fourth class="button">Next</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section> -->
-
