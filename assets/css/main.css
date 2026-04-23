@@ -8627,12 +8627,12 @@ input, select, textarea {
 
 /* ---- Global background & text ---- */
 html, body {
-	background-color: var(--bl-cornsilk) !important;
+	background-color: var(--bl-ivory) !important;
 	color: var(--bl-dark);
 }
 
 #wrapper {
-	background-color: var(--bl-cornsilk);
+	background-color: var(--bl-ivory);
 }
 
 /* Force consistent bg on all top-level sections */
@@ -8642,7 +8642,7 @@ html, body {
 .spotlight,
 .wrapper.style1,
 .wrapper.style2 {
-	background-color: var(--bl-cornsilk) !important;
+	background-color: var(--bl-ivory) !important;
 	color: var(--bl-dark);
 }
 
@@ -8712,7 +8712,7 @@ h2, h3, h4, h5, h6 {
 /* Section h1s */
 .spotlight .content h1,
 .wrapper.style1 .inner h1 {
-	font-family: "Nunito", "Source Sans Pro", sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 900;
 	font-size: 2.75rem;
 	letter-spacing: -0.02em;
@@ -8782,7 +8782,7 @@ a:hover {
 
 /* ---- Gallery captions ---- */
 .gallery article .caption {
-	background-color: var(--bl-cornsilk);
+	background-color: var(--bl-ivory);
 }
 
 .gallery article .caption h3,
@@ -8817,7 +8817,7 @@ a:hover {
 
 /* ---- Footer ---- */
 footer.wrapper {
-	background-color: var(--bl-cornsilk) !important;
+	background-color: var(--bl-ivory) !important;
 	border-top: 1px solid rgba(254, 240, 204, 0.12);
 }
 
@@ -9099,5 +9099,3 @@ strong, b {
 		padding: 0 1rem;
 	}
 }
-
-/* ---- Name gif (legacy, now handled by .name-gif) ---- */
